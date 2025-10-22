@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Coffee-themed color palette */
+    --background: 42 45% 97%;
+    --foreground: 25 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 30% 15%;
+
+    /* Deep espresso brown */
+    --primary: 25 40% 18%;
+    --primary-foreground: 42 45% 97%;
+
+    /* Latte cream */
+    --secondary: 35 35% 70%;
+    --secondary-foreground: 25 30% 15%;
+
+    /* Soft cream */
+    --muted: 42 30% 90%;
+    --muted-foreground: 25 20% 45%;
+
+    /* Roasted coffee accent */
+    --accent: 25 30% 40%;
+    --accent-foreground: 42 45% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 42 45% 97%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 25 40% 18%;
+
+    --radius: 0.75rem;
+
+    /* Coffee gradients */
+    --gradient-coffee: linear-gradient(135deg, hsl(25 40% 18%) 0%, hsl(25 30% 40%) 100%);
+    --gradient-cream: linear-gradient(135deg, hsl(42 45% 97%) 0%, hsl(35 35% 85%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(25 40% 18%) 0%, hsl(25 30% 30%) 50%, hsl(35 30% 50%) 100%);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 25 40% 8%;
+    --foreground: 42 45% 97%;
+
+    --card: 25 35% 12%;
+    --card-foreground: 42 45% 97%;
+
+    --popover: 25 35% 12%;
+    --popover-foreground: 42 45% 97%;
+
+    --primary: 35 35% 70%;
+    --primary-foreground: 25 40% 8%;
+
+    --secondary: 25 30% 20%;
+    --secondary-foreground: 42 45% 97%;
+
+    --muted: 25 30% 20%;
+    --muted-foreground: 35 20% 65%;
+
+    --accent: 25 30% 30%;
+    --accent-foreground: 42 45% 97%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 42 45% 97%;
+
+    --border: 25 30% 20%;
+    --input: 25 30% 20%;
+    --ring: 35 35% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
