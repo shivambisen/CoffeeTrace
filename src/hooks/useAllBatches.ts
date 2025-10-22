@@ -18,7 +18,7 @@ export function useAllBatches() {
       try {
         setIsLoading(true);
         const fetchedBatches: CoffeeBatch[] = [];
-        let batchId = 1; // start from batch ID 1
+        let batchId = 4; // start from batch ID 1
         while (true) {
           try {
             // @ts-ignore
